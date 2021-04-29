@@ -1,5 +1,6 @@
 #include<iostream>
 #include <cstring>
+#include <iomanip>
 #define MAX_VALUE 100
 using namespace std;
 
@@ -43,7 +44,7 @@ int main() {
 	}
 
 	for (int i = 0; i < c; i++) {
-		cout << MinCost(n[i], l[i], num_n[i]) << endl;
+		printf("%.12lf\n", MinCost(n[i], l[i], num_n[i]));
 	}
 
 	for (int i = 0; i < c; i++) {
